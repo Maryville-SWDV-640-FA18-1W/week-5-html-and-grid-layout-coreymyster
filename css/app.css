@@ -4,18 +4,6 @@ body {
   color: #2d2d2d;
 }
 
-ul {
-  text-align: center;
-  padding-top:60px;
-}
-
-ul li {
-  display: inline;
-  padding-right: 100px;
-  float: right;
-  font-weight: bold;
-}
-
 h1 {
   text-align: center;
   color: #112F41;
@@ -24,7 +12,7 @@ h1 {
 }
 
 .logo {
-  width: 250px;
+  width: 200px;
   float:left;
   padding-top: 30px;
 }
@@ -56,6 +44,16 @@ h1 {
 .furnitureHome img {
   width: 300px;
   height: 300px;
+  padding: 10px;
+}
+
+footer ul {
+  padding-top: 20px;
+}
+
+footer ul li {
+  font-size: 11px;
+  padding-right: 70px;
 }
 
 footer {
@@ -67,4 +65,132 @@ footer {
 .copyright {
   font-size: 12px;
   text-align: center;
+
+}
+
+@media only screen and (max-width:768px) {
+  .menu-open {
+    background-color: #068587;
+    color: #fff;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1001;
+    padding: 20px;
+  }
+
+  .menu-close {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    display: none;
+  }
+
+
+  #toggle {
+    display: none;
+  }
+
+  #toggle:checked ~ nav ul {
+    display: block;
+  }
+
+  #toggle:checked ~ .menu-close {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    right: 0;
+    top:0;
+    background-color: #068587;
+    color: #fff;
+    list-style-type:  none;
+    min-width: 200px;
+    z-index: 1002;
+    display: none;
+  }
+
+  ul li {
+    padding: 30px 0;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .material-icons {
+    display: none;
+  }
+
+  #toggle {
+    display:none;
+  }
+
+  footer ul {
+    padding-top: 80px;
+  }
+
+  footer ul li {
+    font-size: 14px;
+    padding-right: 70px;
+  }
+
+  .logo {
+    width: 250px;
+    float:left;
+    padding-top: 30px;
+  }
+  ul {
+    text-align: center;
+    padding-top:60px;
+  }
+
+  ul li {
+    display: inline;
+    padding-right: 40px;
+    font-size: 14px;
+    float: right;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .furnitureHome img {
+    width: 220px;
+    height: 220px;
+}
+
+@media only screen and (min-width: 720px) {
+  .furnitureHome img {
+    width: 420px;
+    height: 420px;
+}
+
+@media only screen and (min-width: 740px) {
+  .furnitureHome img {
+    width: 600px;
+    height: 600px;
+}
+
+@media only screen and (min-width: 991px) {
+  .furnitureHome img {
+    width: 300px;
+    height: 300px;
+    padding: 10px;
+}
+ul {
+  text-align: center;
+  padding-top:60px;
+}
+
+ul li {
+  display: inline;
+  font-size: 16px;
+  padding-right: 100px;
+  float: right;
+  font-weight: bold;
+}
 }
